@@ -29,6 +29,8 @@ function saveUser(){
     var lname1= document.getElementById("pswconf").value;
     var user = new User(name,lname,lname1,subject,nickname,psw,pswconf);
     console.log(user);
+    var jsonData = JSON.stringify(user);
+    localStorage.setItem('user',jsonData);
 }
 
 
@@ -38,7 +40,7 @@ function usersInput() {
 var users = usersInput();
 console.log(users);
 
-var jsonData = JSON.stringify(users);
+//var jsonData = JSON.stringify(users);
 
 /*
 fs.writeFile("mynewfile1.txt", jsonData, function(err) {
