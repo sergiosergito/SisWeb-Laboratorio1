@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="..\style\stylesLogin.css">
+  
+
+</head>
+
+<body>
+    
+  <!–– Create A Top Navigation Bar ––> 
+    <div class="topnav">
+        <a href="main.html">Home</a>
+        <a class="active" href="#Login">Login</a>       
+      </div>
+   
+      
+   
+    <!–– Create a Form ––>  
+    
+    <h2>Bienvenid@ al Login</h2>
+    <p> Ingresa a tu cuenta si ya estas registrado o registrate gratis llenando este formulario.</p>
+
+    <div class="container">
+    <form  id="miForm" action="login.html">
+    <div class="row">
+        <div class="col-25">
+        <label for="fname">Nombre</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Tu nombre.">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+        <label for="lname1">Primer Apellido</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="lname" name="lastname1" placeholder="Tu Primer apellido..">
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-25">
+            <label for="lname2">Segundo Apellido</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="lname" name="lastname2" placeholder="Tu Segundo apellido..">
+            </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-25">
+        <label for="country">Pais</label>
+        </div>
+        <div class="col-75">
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="alemania">Alemania</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="argentina">Argentina</option>
+            <option value="sur africa">Sur Africa</option>
+            <option value="francia">Francia</option>
+            <option value="paisesbajos">Paises Bajos</option>
+            <option value="brasil">Brasil</option>
+            <option value="peru">Peru</option>
+            <option value="chile">Chile</option>
+        </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+        <label for="subject">Asunto</label>
+        </div>
+        <div class="col-75">
+        <textarea id="subject" name="Acerca de ti" placeholder="Que quisieras que sepamos de ti.." style="height:200px"></textarea>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <form action="">
+        Ingrea tu nuevo nombre de Usuario:<br>
+        <input type="text" name="userid">
+        <br>
+        password para tu usuario:<br>
+        <input type="password" name="psw">
+        <br>
+        Confirma tu password:<br>
+        <input type="password" name="pswconf">
+        </form>
+    </div>
+
+    <div class="row">
+        <!-- <input type="submit" value="Registrar"> -->
+        <input type="submit" value="Submit" onClick="saveUser()">
+    </div>
+
+    </form>
+    <!–– FIN a Form ––> 
+
+    </div>
+
+    
+
+    <script src="..\script\loginLogic.js"></script>
+  
+</body>
+</html>
