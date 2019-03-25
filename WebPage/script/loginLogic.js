@@ -2,9 +2,15 @@
 //var fs = require("fs");
 
 class User { 
-    constructor(name, lastname) {
+    constructor(name, lastname, lastname1,subject,nickname,psw,pswconf) {
         this.name = name; 
-        this.lastname = lastname; 
+        this.lastname = lastname;
+        this.lastname1 = lastname1;
+        this.subject = subject;
+        this.nickname = nickname; 
+        this.psw = psw;
+        this.pswconf = pswconf;
+          
     }
 }
 
@@ -15,8 +21,13 @@ function saveUser(){
     //document.getElementById("miForm").submit();
     
     var name=document.getElementById("fname").value;
-    var lname1= document.getElementById("lname").value;
-    var user = new User(name,lname1);
+    var lname= document.getElementById("lname").value;
+    var lname1= document.getElementById("lname1").value;
+    var name=document.getElementById("subject").value;
+    var subject=document.getElementById("nickname").value;
+    var lname= document.getElementById("psw").value;
+    var lname1= document.getElementById("pswconf").value;
+    var user = new User(name,lname,lname1,subject,nickname,psw,pswconf);
     console.log(user);
 }
 
