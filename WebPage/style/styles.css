@@ -131,38 +131,40 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+/*---------------- Bienvenida  ---------------*/
+ 
+.area1 {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
 h1 {
-  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
 }
+
 p {
-  color: red;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
 }
 
-p.error {
-  color: #ee7440;
+a {
+  text-decoration: none;
+  color: #008CBA;
 }
 
-#p01 {
-  color:greenyellow;
+/*-------------- Imagenes ----------------*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
-/*
-body {
-    
-  }
-  h1 {
-    color: whitesmoke;
-  }
-  p {
-    color: red;
-  }
-
-  p.error {
-    color: #ee7440;
-  }
-
-  #p01 {
-    color:greenyellow;
-  }
-*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
